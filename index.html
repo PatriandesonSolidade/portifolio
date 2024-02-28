@@ -1,0 +1,66 @@
+<!--indica que é um html na versão 5-->
+<!DOCTYPE html>
+<!--'lang' = escolha do idoma-->
+<html lang="pt-br">
+<!--"cabeça do html que vai na barra de endereço"-->    
+<head>
+    <!--codificação unicod(acentuação e caracteres especiais)-->
+    <meta charset="UTF-8">
+    <!--tag para exclusiva para "adaptação" no navegador edge-->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <!--Tag de auto redimencionamento do tamanho de tela-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <!--tag 'link' serve para linkar o html com o css. 'rel' é a tag relação e 'href' direciona para o arquivo-->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+ <!--corpo da página. O que vai ser de fato visto pelo usuario--> 
+<body>
+    <!--Tags 'h' são titulo que variam até 'h6'-->
+    <!-- <h1>Titulo</h1>-->
+    <!--Tag 'p' indica paragrafo-->
+    <!-- <p>Isso é um paragrafo</p> -->
+    <!--Tag 'img' indica que vai ser inserida uma imagem e 'src=' direciona para o endereço da imagem-->
+    <!-- <img src="D1 desbravadores.png" alt="logo dos desbravadores"> -->
+    
+    <!-- tag de cabeçalho-->
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="./curriculo.html">Curriculo</a>
+        </nav>
+    </header>
+    <!--conteúdo principal com a classe 'apresentação'-->
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <!--Tag 'strong' destaca um texto. Tag 'a' indica uma ancora (botão clicavél)-->
+            <!--'class' cria uma classe dentro do strong, podendo assim o texto ser alterado de maneira individual-->
+            <!-- Tag 'href' faz o direcionamento do clique no botão da ancora-->
+            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível <strong class="titulo-destaque"> com um Front-end de qualidade!</strong></h1>
+            <p class="apresentacao__conteudo__paragrafo">Olá! Sou Patriandeson Solidade, desenvolvedor Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+            <div class="apresentacao__links">
+                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes!</h2>
+                <a class="apresentacao__links__link" href="https://instagram.com/fisiopatriandeson"> 
+                    <img src="./assets/instagram.png" alt="imagem logo do instagram">
+                    Instagram
+                </a>
+                <a class="apresentacao__links__link" href="https://github.com/PatriandesonSolidade"> 
+                    <img src="./assets/github.png" alt="imagem logo do github">
+                    GitHub
+                </a>
+                <a class="apresentacao__links__link" href="https://linkedin.com/in/patriandeson">
+                    <img src="./assets/linkedin.png" alt="imagem logo do Linkedin">
+                    Linkedin
+                </a>
+        </div>
+        </section>
+        <img class="apresentacao__imagem" src="./assets/perfil_patriandeson.png" alt="Foto do Dr Patriandeson"width="350px" height="500px">
+
+    </main>
+    <!--rodapé da página-->
+    <footer class="rodape">
+        <p>Desenvolvido por Patriandeson Devolop</p>
+    </footer>
+</body>
+</html>
