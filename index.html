@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <!--'lang' = escolha do idoma-->
 <html lang="pt-br">
-<!--"cabeça do html que vai na barra de endereço"-->    
+<!--"cabeça do html que vai na barra de endereço"-->
+
 <head>
     <!--codificação unicod(acentuação e caracteres especiais)-->
     <meta charset="UTF-8">
@@ -14,49 +15,56 @@
     <!--tag 'link' serve para linkar o html com o css. 'rel' é a tag relação e 'href' direciona para o arquivo-->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
+<!--corpo da página. O que vai ser de fato visto pelo usuario-->
 
- <!--corpo da página. O que vai ser de fato visto pelo usuario--> 
 <body>
-    <header class="cabecalho">
+    <header>
+        <img id="logoCamlTech" src="assets/logoCamlTech.png" alt="">
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Inicio</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="./skills.html">Habilidades</a>
-            <a class="cabecalho__menu__link" href="./projects.html">Projetos</a>
-            <a class="cabecalho__menu__link" href="./blog.html">Blog</a>
-            <a class="cabecalho__menu__link" href="./contact.hmtl">Contato</a>
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Sobre mim</a>
+            <a href="./skills.html">Habilidades</a>
+            <a href="./projects.html">Projetos</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.hmtl">Contato</a>
         </nav>
     </header>
     <!--conteúdo principal com a classe 'apresentação'-->
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
-            <!--Tag 'strong' destaca um texto. Tag 'a' indica uma ancora (botão clicavél)-->
-            <!--'class' cria uma classe dentro do strong, podendo assim o texto ser alterado de maneira individual-->
-            <!-- Tag 'href' faz o direcionamento do clique no botão da ancora-->
-            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível <strong class="titulo-destaque"> com um Front-end de qualidade!</strong></h1>
-            <p class="apresentacao__conteudo__paragrafo">Olá! Sou Patriandeson Solidade, desenvolvedor Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
-            <div class="apresentacao__links">
-                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes!</h2>
-                <a class="apresentacao__links__link" href="https://instagram.com/fisiopatriandeson"> 
-                    <img src="./assets/instagram.png" alt="imagem logo do instagram">
-                    Instagram
+            <h1>Patriandeson Solidade</h1>
+            <p id="apresentacao__subtitulo">Desenvolvedor Frontend focado em interfaces modernas e acessíveis</p>
+
+            <div class="apresentacao__botoes">
+                <a  href="https://wa.me/+5594992196751" target="_blank" rel="noopener noreferrer">
+                    Contato
                 </a>
-                <a class="apresentacao__links__link" href="https://github.com/PatriandesonSolidade"> 
-                    <img src="./assets/github.png" alt="imagem logo do github">
-                    GitHub
+                <a id="apresentacao__botoes__projetos" href="./projects.html">
+                    Conheça meus projetos
                 </a>
-                <a class="apresentacao__links__link" href="https://linkedin.com/in/patriandeson">
-                    <img src="./assets/linkedin.png" alt="imagem logo do Linkedin">
-                    Linkedin
-                </a>
-        </div>
+            </div>
+
+            <p class="apresentacao__paragrafo">“Como desenvolvedor frontend e empreendedor. Gosto de criar
+                soluções modernas, funcionais e que realmente resolvem
+                problemas. Acredito que tecnologia, quando bem usada, aproxima pessoas e potencializa resultados.”</p>
         </section>
-        <img class="apresentacao__imagem" src="./assets/perfil_patriandeson.png" alt="Foto do Dr Patriandeson"width="350px" height="500px">
+
+        <img class="apresentacao__imagem" src="./assets/capa.svg" alt="" width="500rem" height="500rem">
 
     </main>
     <!--rodapé da página-->
-    <footer class="rodape">
-        <p>Desenvolvido por Patriandeson Devolop</p>
+    <footer>
+        <p>&copy; 2025 Patriandeson Solidade</p>
+        <div class="footer__icones">
+            <a href="https://www.linkedin.com/in/patriandeson-dev/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/linkedin.png" alt="">
+        </a>
+        <a href="https://github.com/PatriandesonSolidade" target="_blank" rel="noopener noreferrer">
+            <img src="assets/github.png" alt="">
+        </a>
+        </div>
+        
     </footer>
 </body>
+
 </html>
